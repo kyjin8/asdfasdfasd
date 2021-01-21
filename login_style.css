@@ -1,0 +1,227 @@
+/* h1{
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 0 33px 0;
+} */
+ul{
+    display: block;
+    padding: 0;
+}
+#help-links, .text-center, body .thirdparty-line, body .thirdpart{
+    text-align: center;
+}
+#help-links li{
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+#help-links a{
+    text-decoration: none;
+    color: #00aeff;
+    transition: color .2s;
+}
+#help-links{
+    list-style: none;
+    margin: 10px 0;
+}
+.thirdparty-line span:before, .thirdparty-line span:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 150px;
+    height: 1px;
+    background-color: rgba(255,255,255,.1);
+}
+.thirdparty-line span:after{
+    left: 98%;
+    margin-left: 20px;
+}
+.thirdparty-line span:before{
+    right: 100%;
+    margin-right: 20px;
+}
+.thirdparty-line span{
+    position: relative;
+    display: inline-block;
+}
+.thirdparty-line{
+    font-size: 13px;
+    color: rgba(255,255,255,.3);
+    display: block;
+    white-space: nowrap;
+    margin: 14px 0 20px;
+}
+.btn-block{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+    padding: 9px 30px;
+    font-size: 17px;
+    line-height: 20px;
+    height: 40px;
+}
+/* #login-wrapper button#submit{
+    margin-top: 5px;
+    margin-bottom: 6px;
+} */
+.btn-primary{
+    margin-top: 5px;
+    margin-bottom: 6px;
+    color: #fff;
+    background-color: #0e86ca;
+    border: 1px solid #10a1de;
+    transition: background-color .2s;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.15) inset;
+}
+.social-icon{
+    margin: 0 9px;
+    width: 44px;
+    height: 44px;
+    padding: 13px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+.icon-facebook{
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    background: url("./images/login/facebook-logo-white.42pqh.svg");
+    opacity: 1;
+    width: 18px;
+    height: 18px;
+}
+.login-facebook{
+    background-color: #1877F2;
+}
+.icon-google{
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url('./images/login/google-logo-color.3heUj.svg');
+    opacity: 1;
+    height: 17px;
+    width: 17px;
+    margin-top: 0;
+}
+.icon-apple{
+    display: inline-block;
+    /* margin-left: 0;
+    margin-right: 0; */
+    background: url('./images/login/apple-logo-black.067En.svg');
+    opacity: 1;
+    height: 18px;
+    width: 14.5px;
+    margin-top: -2px;
+}
+.login-google, .login-apple{
+    background-color: #fff;
+}
+.external-login-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -9px;
+}
+input{
+    font-weight: 400;
+    outline: 0;
+}
+.input-block{
+    /* display: inline-block;
+    vertical-align: middle; */
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    padding: 0 10px;
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 2px;
+}
+.control-group:before, .control-group:after {
+    content: ".";
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.control-group{
+    margin-bottom: 5px;
+}
+form{
+    margin: 0;
+}
+.login{
+    width: 100%;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#login-wrapper{
+    min-width: 290px;
+    max-width: 500px;
+    margin: 0 auto 200px;
+    padding: 0 20px;
+}
+.logo{
+    width: 200px;
+    height: 105px;
+    text-indent: -9999px;
+    background-image: url("./images/login/blizzard-default.1C4OH.png");
+    margin: 0 auto;
+}
+body .logo{
+    margin-top: 55px;
+    margin-bottom: 40px;
+    display: block;
+}
+.grid-container:before, .grid-container:after {
+    content: ".";
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.grid-container{
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+}
+.grid-container.wrapper{
+    position: relative;
+    min-height: 100%;
+    padding: 0;
+}
+body{
+    word-break: keep-all;
+    background-image: url("https://bnetus-a.akamaihd.net/login/static/images/login/background/login-background-1920.3f7pb.jpg");
+    color: rgba(255,255,255,0.7);
+    background-color: #0d1e30;
+    font-family: "Blizzard","Arial","Helvetica","Segoe UI Symbol","Segoe MDL2 Assets","Malgun Gothic","AppleSDGothicNeo","AppleGothic","Dotum","Segoe UI Symbol","Segoe MDL2 Assets",sans-serif;
+    min-width: 320px;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+}
+html{
+    font-family: sans-serif;
+}
+.body, html{
+    height: 100%;
+    background: #202020;
+}

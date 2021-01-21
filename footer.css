@@ -1,0 +1,150 @@
+.SocialModule{
+    padding: 12px 0;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    /* transition: opacity .2s; */
+}
+.overwatch-footer{
+    position: relative;
+    background-image: url(https://static.playoverwatch.com/img/pages/buy/buy-bar-bg-3c956a1db2.jpg);
+    text-align: center;
+    /* z-index: -1;
+    color: #f6f6f6;
+    fill: #f6f6f6; */
+}
+.footer-rule{
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #cacaca;
+    opacity: .1;
+}
+.SocialModule-title{
+    margin-top: 4px;
+    margin-bottom: 10px;
+    font-family: Big Noodle Too,impact,sans-serif;
+    font-style: italic;
+    color: #f6f6f6;
+}
+.SocialModule-links{
+    margin: 8px auto;
+    display: flex;
+    justify-content: center;
+}
+.SocialModule-linkItem{
+    position: relative;
+    width: 54px;
+    height: 54px;
+    margin: 0 12px;
+}
+.SocialIcon{
+    /* position: relative; */
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 50%;
+    /* width: 75%;
+    height: 75%; */
+    /* top: 50%;
+    left: 50%; */
+    opacity: .5;
+    transition: opacity .2s;
+    /* border: 1px solid grey; */
+}
+.SocialIcon svg, .SocialIcon-linkImage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+    fill: #f6f6f6;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+/* .footer-container> */
+.NavbarFooter{
+    font-family: "Open Sans,Arial,Helvetica,Segoe UI Symbol,Segoe MDL2 Assets,맑은 고딕,Malgun Gothic,애플산돌고딕네오,AppleSDGothicNeo,애플고딕,AppleGothic,돋움,Dotum,sans-serif";
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    background-color: rgb(241, 240, 240);
+}
+.NavbarFooter-logoContainer{
+    padding : 50px 0 30px;
+}
+.NavbarFooter-logo{
+    display: block;
+    position: relative;
+    width: 128px;
+    height: 66px;
+    margin: 0 auto;
+}
+.NavbarFooter-logoUpper{
+    color: #00aeff;
+}
+/* .NavbarFooter-logo svg{
+    position: absolute;
+} */
+.entertainment{
+    font-family: Open Sans, sans-serif;
+    font-size: 7px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    letter-spacing: .5em;
+    margin-top: 0;
+}
+.NavbarFooter-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, .8);
+    padding-bottom: 20px;
+}
+.NavbarFooter-links div{
+    display : inline-flex;
+}
+.NavbarFooter-copyright{
+    font-family: Blizzard,Arial,Helvetica,Segoe UI Symbol,Segoe MDL2 Assets,맑은 고딕,Malgun Gothic,애플산돌고딕네오,AppleSDGothicNeo,애플고딕,AppleGothic,돋움,Dotum,sans-serif;
+    text-transform: uppercase;
+}
+@media (min-width: 480px){
+    .NavbarFooter-copyright, .NavbarFooter-trademark{
+        font-size: 13px;
+        color: rgba(0, 0, 0, .8);
+    }
+}
+.NavbarFooter-trademark a{
+    color:#f06414;
+}
+#backsentence{
+    margin-left: -5;
+}
+.NavbarFooter-additionalLegal{
+    word-break: keep-all;
+    color: rgba(0, 0, 0, .5);
+    margin-bottom: 30px;
+    vertical-align: top;
+}
+.NavbarFooter-additionalLegal a{
+    color: rgba(0, 0, 0, .7);
+    font-weight: 700;
+}
+@media (min-width: 480px){
+    .NavbarFooter-additionalLegal{
+        font-size: 11px;
+    }
+}
+.NavbarFooter-legalRatings{
+    margin-bottom: 30px;
+}
+.NavbarFooter-legalRatingWrapper{
+    margin-top: 15px;
+}
+@media only screen and (min-width: 640px){
+    h4{
+        font-size: 1.5rem;
+    }
+}

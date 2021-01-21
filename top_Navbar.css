@@ -1,0 +1,424 @@
+
+
+/*  */
+.Navbar{
+    position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+    z-index: 1;
+}
+.Navbar a, div, img, nav, svg{
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+.Navbar svg{
+    width: auto;
+    height: auto;
+}
+/* .Navbar img{
+    max-width: none;
+} */
+nav{
+    display: block;
+}
+
+.Navbar-svgLogo{
+    fill-rule: evenodd;
+}
+.Navbar-logo svg{
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    fill: currentColor;
+}
+.Navbar a{
+    font-weight: 400;
+    text-transform: none;
+}
+.Navbar-logo{
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 61.8px;
+    color: #009ae4;
+}
+@media (min-width: 960px){
+    .Navbar-logo{
+        margin-right: 30px;
+    }
+}
+
+.Navbar-items{
+    display: inline-block;
+    vertical-align: top;
+}
+.Navbar-modalToggle{
+    cursor: pointer;
+}
+.Navbar-label{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+.Navbar-dropdownIcon svg{
+    height: 14px;
+    top: auto;
+    fill: currentColor;
+}
+.Navbar-dropdownIcon{
+    display: inline-block;
+    width: 14px;
+    height: 1px;
+    margin-left: 2px;
+    color: hsla(0, 0%, 100%, .3);
+}
+.Navbar-item{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    color: hsla(0,0%,100%,.7);
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.4;
+    white-space: nowrap;
+    transition: color .2s, background-color .2s, border-color .2s;
+}
+@media (min-width: 960px){
+    .Navbar-item{
+        margin-right: 30px;
+    }
+}
+.Navbar-profileItems .Navbar-item{
+    margin-left: 20px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.Narvbar-account{
+    margin-right: 0;
+}
+@media (min-width: 960px){
+    .Navbar-profileItems .Navbar-item{
+        margin-left: 0;
+    }
+    .Navbar-account{
+        margin-right: 0;
+    }
+}
+.Navbar-item{
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    font-size: 15px;
+    padding: 0;
+    line-height: 1.4;
+    font-family: Blizzard,Arial,Helvetica,Segoe UI Symbol,Segoe MDL2 Assets,맑은 고딕,Malgun Gothic,애플산돌고딕네오,AppleSDGothicNeo,애플고딕,AppleGothic,돋움,Dotum,sans-serif;
+}
+.Navbar-profileItems{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 30px;
+}
+@media (min-width: 960px){
+    .Navbar-profileItems{
+        right: 40px;
+    }
+}
+.Navbar-support{
+    margin-left: 0;
+}
+/* @media (min-width: 960px){
+    .Navbar-support{
+        margin-left: 0;
+    }
+} */
+.Navbar-logo{
+    height: 40px;
+    width: 61.8px;
+    background-size: auto 28px;
+}
+.Navbar{
+    height: 60px;
+    position: relative;
+    padding: 0 30px;
+    white-space: nowrap;
+}
+.Navbar{
+    height: 40px;
+}
+@media (min-width: 960px){
+    .Navbar{
+       padding: 0 40px;
+    }
+}
+.Navbar-container{
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.Navbar-gameLogoImage{
+    position: absolute;
+    bottom: 37.5%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    transform: translateX(-50%);
+    filter: brightness(100%) contrast(100%);
+}
+.Navbar-gameLogoLabel{
+    position: absolute;
+    top: 62.5%;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+    font-size: 11px;
+    /* line-height: 1.4; */
+    color: hsla(0, 0%, 100%, .7);
+    white-space: normal;
+    transition: color .2s;
+}
+.is-open .Navbar-gameLogo{
+    width : 11%;
+    position: relative;
+    display: inline-block;
+    height: 16.15vw;
+    max-height: 130px;
+    min-height: 130px;
+    min-width: 80px;
+    transform: translateZ(0);
+    animation-name: Navbar-dropdown-drop-in-delayed;
+    animation-duration: .2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+.is-open .activision{
+    width: 37%;
+    animation-name: Navbar-dropdown-drop-in-delayed;
+    animation-duration: .2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+.Navbar-gameLogos{
+    display: block;
+    text-align: center;
+    font-size: 0;
+}
+.Navbar-gamePublisher:first-child {
+    padding-left: 0;
+}
+.Navbar-gamePublisher{
+    display: table-cell;
+    position: relative;
+    vertical-align: top;
+    padding: 20px 20px 15px;
+}
+.columns4:before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    width: 1px;
+    border-left: 1px solid hsla(0, 0%, 100%, .15);
+    margin-left: -20px;
+}
+.Navbar-gamePublisher{
+    width: 75%;
+}
+.Navbar-gamePublishers:first-child{
+    border-top: 0;
+}
+.Navbar .delay-1{
+    animation-delay: 50ms;
+}
+.Navbar .delay-2{
+    animation-delay: .1s;
+}
+.Navbar .delay-3{
+    animation-delay: .15s;
+}
+.Navbar .delay-4{
+    animation-delay: .2s;
+}
+.Navbar .delay-5{
+    animation-delay: .25s;
+}
+.Navbar .delay-6{
+    animation-delay: .3s;
+}
+.Navbar .delay-7{
+    animation-delay: .35s;
+}
+.Navbar .delay-8{
+    animation-delay: .4s;
+}
+.Navbar .delay-9{
+    animation-delay: .45s;
+}
+.Navbar .delay-10{
+    animation-delay: .5s;
+}
+.Navbar .delay-11{
+    animation-delay: .55s;
+}
+.Navbar .delay-12{
+    animation-delay: .6s;
+}
+.Navbar .delay-13{
+    animation-delay: .65s;
+}
+.Navbar .delay-14{
+    animation-delay: .7s;
+}
+.Navbar .delay-15{
+    animation-delay: .75s;
+}
+.Navbar-esportLabel{
+    padding: 0 5px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    transition: color .2s;
+}
+@media (min-width: 1200px){
+    .Navbar-esportLabel{
+        padding: 0 20px;
+    }
+}
+.Navbar-modalSection .esportImage{
+    width: 14vw;
+    height: 12.5vw;
+    max-width: 192px;
+    filter: brightness(100%) contrast(100%);
+    transition: filter .2s;
+    border-collapse: separate;
+}
+.is-open .Navbar-esport{
+    display: table-cell;
+    position: relative;
+    width: 16vw;
+    max-width: 192px!important;
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, .7);
+    animation-name: Navbar-dropdown-drop-in-delayed;
+    animation-duration: .2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+@media (min-width: 1200px){
+    .Navbar-esport {
+        padding: 20px 0;
+        font-size: 15px;
+    }
+}
+.Navbar-modalSection .Navbar-esportsLogos{
+    display: table;
+    position: relative;
+    margin: 0 auto;
+}
+.Navbar-modalSection{
+    padding: 0;
+    text-align: center;
+}
+.Navbar-modalSection:first-child{
+    border-top: 0;
+}
+.is-open .Navbar-gamPublisherLabel{
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, .5);
+    animation-name: Navbar-dropdown-fade-in;
+    animation-duration: .2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+@keyframes Navbar-dropdown-fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.Navbar-gamePublishers{
+    display: table;
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+@media (min-width: 960px){
+    .Navbar-gamePublishers{
+        padding: 0 40px;
+    }
+}
+/* .Navbar-modal{
+    z-index: 3;
+} */
+.Navbar-dropdown{
+    position: absolute;
+    display: none;
+    top: 39px;
+    background-color: rgba(21, 26, 35, .95);
+    background: radial-gradient(ellipse farthest-side at center top,#283244 0,rgba(21,26,35,.95) 100%);
+    border: 1px solid hsla(0, 0%, 100%, .15);
+    opacity: 0;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2);
+    left: 0;
+    right: 0;
+}
+.Navbar-modals .is-open{
+    opacity: 1;
+    display: block;
+    /* z-index: 3; */
+    animation-name: Navbar-dropdown-drop-in-delayed;
+    animation-duration: .2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+@keyframes Navbar-dropdown-drop-in-delayed{
+    0%{
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+/* .Navbar-modals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    white-space: normal;
+} */
+.Navbar-modalContent{
+    z-index: 1;
+    position: relative;
+    border-right: 1px solid #4b535d;
+}
+.Navbar{
+    z-index: 80;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+}
+/* @media (min-width: 1280px){
+    .Navbar {
+        background-color: #0b0d12;
+    }
+} */
+.Navbar{
+    font-family: Open Sans,Arial,Helvetica,Segoe UI Symbol,Segoe MDL2 Assets,맑은 고딕,Malgun Gothic,애플산돌고딕네오,AppleSDGothicNeo,애플고딕,AppleGothic,돋움,Dotum,sans-serif;
+    background-color: #0b0d12;
+}
