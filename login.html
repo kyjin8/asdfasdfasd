@@ -1,0 +1,67 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+    <div class="grid-container wrapper">
+        <div class="center-wrapper">
+            <h1 class="logo">블리자드 계정 로그인</h1>
+            <div class="input" id="login-wrapper">
+                <div class="login">
+                    <form action method="post" id="password-form" class="username-required">
+                        <div id="login-input-container">
+                            <div class="control-group">
+                                <label id="accountName-label" class="control-label" for="accountName">이메일 또는 휴대전화번호</label>
+                                <div class="controls">
+                                    <input id="accountName" class="input-block input-large" title="이메일 또는 휴대전화번호" maxlength="320" type="text" placeholder="이메일 또는 휴대전화번호">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label id="password-label" class="control-label" for="password">비밀번호</label>
+                                <div class="controls">
+                                    <div class="blz-password-wrapper">
+                                        <input id="password" class="input-block input-large" title="비밀번호" maxlength="128" type="text" placeholder="비밀번호">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group submit">
+                                <button type="submit" id="submit" class="btn-primary btn-block">로그인
+                                    <i class="spinner-battlenet"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="thirdparty-line">
+                        <span>또는</span>
+                    </div>
+                    <div class="useResponse social-login external-login-container">
+                        <button id="facebook" class="btn-block social-icon login-facebook">
+                            <i class="icon-facebook"></i>
+                        </button>
+                        <button id="google" class="btn-block social-icon login-google">
+                            <i class="icon-google"></i>
+                        </button>
+                        <button id="apple" class="btn-block social-icon login-apple">
+                            <i class="icon-apple"></i>
+                        </button>
+                    </div>
+                    <ul id="help-links">
+                        <li>
+                            <a id="signup" href="https://kr.battle.net/account/creation/flow/create-full" tabindex="1">블리자드 무료 회원 가입</a>
+                        </li>
+                        <li>
+                            <a id="loginSupport" href="https://us.battle.net/account/recovery/ko/?ref=&theme=blizzard&app=oauth" tableindex="1">로그인 문제 해결</a>
+                        </li>
+                        <li>
+                            <a id="retrieveAccount" href="https://us.battle.net/account/recovery/retrieve/index.html?ref=https://us.battle.net/oauth/authorize?response_type%253Dcode%2526redirect_uri%253Dhttps%25253A%25252F%25252Fplayoverwatch.com%25252Fauth%25252Fbnet%25252Fcallback%2526scope%253Daccount.full%252520commerce.entitlements%2526client_id%253Dcc72d2c0468146f8ae723e4aa7f935a4&theme=blizzard&app=oauth" tabindex="1">탈퇴한 계정 복구</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
